@@ -253,31 +253,6 @@
 							</form>
 						</div>
 						<!-- /search form -->
-						<div class="button-wrap share-button tooltip right">
-							<a href="/register#" class="button dark"><span class="button-icon fa fa-plus"></span></a>
-							<div class="tooltip-wrap">
-								<div class="corner"></div>
-								<div class="tooltip-text">
-									<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="./wel/tweet_button.bb9f4b065c53172f0378057aff0cb3f7.en.html"></iframe>
-									<script>
-										!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fade3ca0219c3" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./wel/ping.html" style="display: none;"></iframe></div><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./wel/xd_arbiter.html" style="border: none;"></iframe></div></div></div>
-										<script>(function(d, s, id) {
-											var js, fjs = d.getElementsByTagName(s)[0];
-											if (d.getElementById(id)) return;
-											js = d.createElement(s); js.id = id;
-											js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=257149217676807";
-											fjs.parentNode.insertBefore(js, fjs);
-										}(document, 'script', 'facebook-jssdk'));
-									</script>
-									<div class="fb-like fb_iframe_widget" data-href="/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false" style="margin-top:2px;" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=257149217676807&amp;container_width=0&amp;href=https%3A%2F%2Fdemo.themex.co%2Facademy%2F&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;size=small">
-									<span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;">
-										<iframe name="fc6cbf9cb6971c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin" src="./wel/like.html" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /share button -->
 				</div>
 				<!-- /header options -->
 				<div class="mobile-search-form">
@@ -328,19 +303,7 @@
 					<div class="row">
 						<div class="copyright left">
 							Academy Theme © 2019						
-						</div>
-						<nav class="footer-navigation right">
-							<div class="menu-footer-menu-container">
-								<ul id="menu-footer-menu" class="menu">
-									<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-193"><a href="/">Home</a></li>
-									<li id="menu-item-237" class="menu-item menu-item-type-taxonomy menu-item-object-course_category menu-item-237"><a href="/courses/all">Courses</a></li>
-									<li id="menu-item-190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-190"><a href="/category/news">News</a></li>
-									<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="/about">About</a></li>
-									<li id="menu-item-740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-740"><a href="/support">Support</a></li>
-								</ul>
-							</div>						
-						</nav>
-						<!-- /navigation -->				
+						</div>				
 					</div>			
 				</footer>				
 			</div>

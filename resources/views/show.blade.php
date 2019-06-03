@@ -56,7 +56,9 @@
 
 
                     <div class="threecol column last">
-                        <img src="{{ asset('wel/image_62.jpg') }}" alt="">
+                        <diV style="position:fixed;">
+                            sdfsdf
+                        </diV> 
                     </div>
                     <div class="clear"></div>
                 </div>
