@@ -36,10 +36,10 @@
                 .kk{min-width:250px;}
                 </style>
 
-                <div class="section">
+                <!--<div class="section">
                 <span>1</span>
                 Description, titre &amp; contenu
-                </div>
+                </div>-->
                 <div class="inner-wrap">
                     
 
@@ -67,9 +67,10 @@
                             });
                         </script>
 
-                    <button type="submit" onclick="document.getElementById('form1l').style.display='none';document.getElementById('form2').style.display='block'" name="form11" class="btn btn-success pull-right button" style="margin-right:10px;margin-top:10px;">
-                        Suivant
+                    <button type="submit" onclick="document.getElementById('form1l').style.display='none';document.getElementById('form2').style.display='block'" name="form11" class="btn btn-success pull-right button" style="margin-right:10px;margin-top:;">
+                        Ajouter
                     </button>
+                    <br>
 
                 </div>
 

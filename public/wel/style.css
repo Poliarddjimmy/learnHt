@@ -3913,3 +3913,133 @@ ul.products li.product img {
 .ie .clearfix {
 	zoom:1;
 }
+
+
+
+
+.menu {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	min-width: 100%;
+  }
+  
+  
+  .menu-dropdown {
+	min-width: 100%;
+	padding: 15px 0;
+	position: absolute;
+	background: #ebebeb;
+	z-index: 100;
+	transition:
+	  0.5s padding,
+	  0.5s background;
+  }
+  
+  .menu-dropdown:after {
+	content: "";
+	display: block;
+	height: 0;
+	border-top: 5px solid #ebebeb;
+	border-left: ($menu_WIDTH / 2) solid transparent;
+	border-right: ($menu_WIDTH / 2) solid transparent;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 101;
+	transition: 0.5s border-top;
+  }
+  
+  .menu:not(:hover) > .menu-dropdown {
+	padding: 4px 0;
+	background: #dddddd;
+	z-index: 99;
+  }
+  
+  .menu:not(:hover) > .menu-dropdown:after {
+	border-top-color: #dddddd;
+  }
+  
+  .menu:not(:hover) > .menu-title:after {
+	border-bottom-color: #dddddd;
+  }
+  
+  .menu-dropdown > * {
+	overflow: hidden;
+	height: 30px;
+	padding: 5px 10px;
+	background: rgba(0,0,0,0);
+	white-space: nowrap;
+	transition: 
+	  0.5s height cubic-bezier(.73,.32,.34,1.5),
+	  0.5s padding cubic-bezier(.73,.32,.34,1.5),
+	  0.5s margin cubic-bezier(.73,.32,.34,1.5),
+	  0.5s 0.2s color,
+	  0.2s background-color;
+  }
+  
+  .menu-dropdown > *:hover {
+	background: rgba(0,0,0,0.1);
+  }
+  
+  .menu:not(:hover) > .menu-dropdown > * {
+	visibility: hidden;
+	height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	color: rgba(25,25,25,0);
+	transition: 
+	  0.5s 0.1s height,
+	  0.5s 0.1s padding,
+	  0.5s 0.1s margin,
+	  0.3s color,
+	  0.6s visibility;
+	z-index: 99;
+  }
+  
+  .hList {
+	overflow: hidden;
+  }
+  
+
+  
+  
+  #myInput {
+	box-sizing: border-box;
+	background-image: url('searchicon.png');
+	background-position: 14px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 14px 20px 12px 45px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f6f6f6;
+	width: 150%;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}

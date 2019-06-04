@@ -236,11 +236,55 @@
 								<a href="/register" class="button"><span class="button-icon register"></span>Register</a>
 							</div>
 							@else
-							<div class="button-wrap left">
-							  <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="button">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
-								</a>
+							<div class="button-wrap left dropdown">
+
+								<button onclick="myFunction()" class="dropbtn button dark">
+								<i class="fa fa-cogs" aria-hidden="true"></i> Parammetres
+								</button>
+								<div id="myDropdown" class="dropdown-content ">
+									<!--<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">-->
+									<a href="#about">About</a>
+									<a href="#base">Base</a>
+									<a href="#blog">Blog</a>
+									<a href="#contact">Contact</a>
+									<a href="#custom">Custom</a>
+									<a href="#support">Support</a>
+									<a  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="">Logout</a>
 								</div>
+
+								<script>
+									function myFunction() {
+											document.getElementById("myDropdown").classList.toggle("show");
+										}
+										
+										function filterFunction() {
+											var input, filter, ul, li, a, i;
+											input = document.getElementById("myInput");
+											filter = input.value.toUpperCase();
+											div = document.getElementById("myDropdown");
+											a = div.getElementsByTagName("a");
+											for (i = 0; i < a.length; i++) {
+											txtValue = a[i].textContent || a[i].innerText;
+											if (txtValue.toUpperCase().indexOf(filter) > -1) {
+												a[i].style.display = "";
+											} else {
+												a[i].style.display = "none";
+											}
+											}
+										}
+								</script>
+
+								<!--<a href="#click" class="menu">Option
+								<ul class="menu-dropdown">
+									<li>cat</li>
+									<li>
+										<b>
+											
+										</b>
+									</li>
+								</ul>
+								</a>-->
+							</div>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
                 </form>
